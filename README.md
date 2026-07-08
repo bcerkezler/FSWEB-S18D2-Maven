@@ -50,3 +50,19 @@ Yazdığınız sorguları buradan test edebilirsiniz: [https://ergineer.com/asse
       10) Öğrenci noya göre öğrenci silebilmeyi sağlayan "sil" adında bir prosedür oluşturun.
 
 
+### ⚠️ Skorun NextGen'e Kaydedilmediyse
+
+Eğer testleri çalıştırdığın halde skorun NextGen'e kaydedilmediyse, önce fork'unun güncel olup olmadığını kontrol et:
+
+1. GitHub reponu aç.
+2. Repo **X commit ahead** ve **X commits behind** şeklinde bir uyarı gösteriyorsa, branch'in güncel değildir.
+3. **Sync fork → Update branch** adımlarını uygula.
+4. Ardından localinde şu komutu çalıştır:
+
+```bash
+   git pull
+```
+
+5. Testleri tekrar çalıştır. Bu adımdan sonra skorun güncellenmiş olacaktır.
+
+> **Not:** Bu kontrolü yapmadan tekrar tekrar test çalıştırmak sorunu çözmez; sorunun kaynağı genellikle fork'un upstream repository ile senkron olmamasıdır.
